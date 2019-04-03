@@ -6,7 +6,59 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url("svgs/background.svg");
 }
+
+
+/********************
+Nav Items
+********************/
+
+nav {
+  text-align: left;
+}
+
+.nav-list {
+  display: inline-flex;
+  list-style: none;
+  font-weight: bold;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+.nav-svg {
+  height: 12px;
+  margin-right: 10px;
+}
+
+svg .nav-icon {
+  fill: #39add1;
+}
+
+nav a:hover, .nav-icon:hover {
+  color: red;
+  fill: red;
+}
+
+
+/* end nav! */
+
+/********************
+Start Logo
+********************/
+
+.logo {
+  height: 140px;
+  width: 120px;
+}
+
+.logo-text {
+  display: none;
+}
+
+/* end logo! */
 
 #container {
   max-width: 960px;
@@ -60,3 +112,13 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+
+
+
+@media screen and (min-width: 425px) {
+  .logo-text {
+    display: block;
+  }
+
+}
+
