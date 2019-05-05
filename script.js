@@ -3,8 +3,8 @@
     heading.textContent = "PAW PRINT KENNELS";
     heading.className = "heading";
     
-    const logoText = document.querySelector('.logo-text');
-    logoText.appendChild(h1);
+    const logo = document.querySelector('.logo-heading');
+    logo.appendChild(header);
 
   
 

@@ -9,57 +9,6 @@ body {
   background-image: url("svgs/background.svg");
 }
 
-
-/********************
-Nav Items
-********************/
-
-nav {
-  text-align: left;
-}
-
-.nav-list {
-  display: inline-flex;
-  list-style: none;
-  font-weight: bold;
-}
-
-nav ul li {
-  margin-right: 30px;
-}
-
-.nav-svg {
-  height: 12px;
-  margin-right: 10px;
-}
-
-svg .nav-icon {
-  fill: #39add1;
-}
-
-nav a:hover, .nav-icon:hover {
-  color: red;
-  fill: red;
-}
-
-
-/* end nav! */
-
-/********************
-Start Logo
-********************/
-
-.logo {
-  height: 140px;
-  width: 120px;
-}
-
-.logo-text {
-  display: none;
-}
-
-/* end logo! */
-
 #container {
   max-width: 960px;
   background: #fff;
@@ -114,11 +63,112 @@ footer {
 }
 
 
+/********************
+Nav Items
+********************/
+
+nav {
+  text-align: left;
+}
+
+.nav-list {
+  display: inline-flex;
+  list-style: none;
+  font-weight: bold;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+.nav-svg {
+  height: 12px;
+  margin-right: 10px;
+}
+
+svg .nav-icon {
+  fill: #39add1;
+}
+
+nav a:hover, .nav-icon:hover {
+  color: red;
+  fill: red;
+}
+
+
+/* end nav! */
+
+/********************
+Start Logo
+********************/
+
+.logo {
+  height: 140px;
+  width: 120px;
+}
+
+.logo-text {
+  display: none;
+}
+
+/* end logo! */
+
+/********************
+Start Corgi
+********************/
+
+.corgi-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inner-flex {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 10px;
+}
+
+.coat-color {
+  padding-right: 35px;
+}
+
+.sable {
+  color:#b97f5b;
+  fill: currentColor;
+ 
+}
+
+.fawn {
+color: #e9aa82; 
+fill: currentColor;
+}
+
+.red {
+color: #824b2d;
+fill: currentColor;
+}
+
+.stone {
+color: #52595e;
+}
+
+.hide {
+display: none;
+}
+
+/* end corgi! */
+
 
 @media screen and (min-width: 425px) {
   .logo-text {
     display: block;
   }
 
-}
+  .logo-heading {
+    display: none;
+  }
 
+}
