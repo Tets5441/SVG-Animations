@@ -78,7 +78,7 @@ nav {
 }
 
 nav ul li {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .nav-svg {
@@ -90,7 +90,8 @@ svg .nav-icon {
   fill: #39add1;
 }
 
-nav a:hover, .nav-icon:hover {
+.nav-list li:hover > a,
+.nav-list li:hover .nav-icon {
   color: red;
   fill: red;
 }
@@ -109,6 +110,16 @@ Start Logo
 
 .logo-text {
   display: none;
+}
+
+/** transitions **/
+
+.logo {
+  transition: .2s ease-out;
+}
+
+.st2:hover {
+  fill: #000;
 }
 
 /* end logo! */
@@ -169,6 +180,10 @@ display: none;
 
   .logo-heading {
     display: none;
+  }
+
+  nav ul li {
+    margin-right: 30px;
   }
 
 }
