@@ -88,12 +88,18 @@ nav ul li {
 
 svg .nav-icon {
   fill: #39add1;
+  transition: .2s ease-in-out;
+}
+
+svg .nav-icon:hover {
+  transform: rotateY(180deg);
+  transform-origin: center;
 }
 
 .nav-list li:hover > a,
 .nav-list li:hover .nav-icon {
-  color: red;
-  fill: red;
+  color: #5b84b9;
+  fill: #5b84b9;
 }
 
 
@@ -115,11 +121,14 @@ Start Logo
 /** transitions **/
 
 .logo {
-  transition: .2s ease-out;
+  transition: .5s ease-out;
 }
 
-.st2:hover {
-  fill: #000;
+.logo:hover {
+  transform: rotate(25deg) scale(1.5);
+  padding: 5px;
+  box-shadow: -5px -5px 5px #888; 
+  border-radius: 25%;
 }
 
 /* end logo! */
